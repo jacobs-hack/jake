@@ -1,0 +1,29 @@
+{
+  "name": "jaybot",
+  "version": "1.0.0",
+  "description": "jacobsHack chat bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobs-hack/jaybot.git"
+  },
+  "keywords": [
+    "chat-bot",
+    "node.js"
+  ],
+  "author": "Natnael Getahun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobs-hack/jaybot/issues"
+  },
+  "homepage": "https://github.com/jacobs-hack/jaybot#readme",
+  "dependencies": {
+    "botbuilder": "^3.2.3",
+    "express": "^4.14.0",
+    "restify": "^4.1.1"
+  }
+}
