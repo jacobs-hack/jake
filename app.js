@@ -21,7 +21,7 @@ if (!FB_PAGE_TOKEN) { throw new Error('missing FB_PAGE_TOKEN') }
 const FB_APP_SECRET = config.messenger.appSecret;
 if (!FB_APP_SECRET) { throw new Error('missing FB_APP_SECRET') }
 
-let FB_VERIFY_TOKEN = config.messenger.validationToken;
+var FB_VERIFY_TOKEN = config.messenger.validationToken;
 
 /*crypto.randomBytes(8, (err, buff) => {
   if (err) throw err;
@@ -52,7 +52,7 @@ const fbMessage = (id, text) => {
 const sessions = {};
 
 const findOrCreateSession = (fbid) => {
-  let sessionId;
+  var sessionId;
   Object.keys(sessions).forEach(k => {
     if (sessions[k].fbid === fbid) {
       sessionId = k;
