@@ -7,21 +7,17 @@ module.exports =
         "name": "jaybot",
         "port": "8847"
     },
-    // api keys
-    api: 
-    {
-        "appId": "425c42fc-1b91-4eae-b0f0-3d61a4ef6c47",
-        "appKey": "munFdwUgX5rNGp63wU7uviU"
-    },
+    // messenger keys
     messenger: 
     {
-        "appSecret": "",
+        "appSecret": "dslndslnsomethingrandom43423",
         "validationToken": "messenger_jhack_bot_2016",
-        "pageAccessToken": ""
+        "pageAccessToken": "aabbaaccssdd"
     },
+    // wit keys
     wit: 
     {
-        "appId": "",
-        "serverAccessToken": ""
+        "appId": "your-wit-id",
+        "serverAccessToken": "your-server-access-token"
     }
 }
