@@ -6,10 +6,8 @@ const express = require('express');
 const fetch = require('node-fetch');
 const request = require('request');
 
-let Wit = null;
-let log = null;
-Wit = require('node-wit').Wit;
-log = require('node-wit').log;
+const Wit = require('node-wit').Wit;;
+const log = require('node-wit').log;
 
 // Webserver parameter
 const PORT = config.bot.port || 5000;
