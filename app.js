@@ -1,16 +1,13 @@
-'use strict';
+var config = require('./app/config.js');
 
-const config = require('./app/config.js');
 const bodyParser = require('body-parser');
 // const crypto = require('crypto');
 const express = require('express');
 const fetch = require('node-fetch');
 const request = require('request');
 
-let Wit = null;
-let log = null;
-Wit = require('node-wit').Wit;
-log = require('node-wit').log;
+const Wit = require('node-wit').Wit;;
+const log = require('node-wit').log;
 
 // Webserver parameter
 const PORT = config.bot.port || 5000;
@@ -24,7 +21,7 @@ if (!FB_PAGE_TOKEN) { throw new Error('missing FB_PAGE_TOKEN') }
 const FB_APP_SECRET = config.messenger.appSecret;
 if (!FB_APP_SECRET) { throw new Error('missing FB_APP_SECRET') }
 
-let FB_VERIFY_TOKEN = config.messenger.validationToken;
+var FB_VERIFY_TOKEN = config.messenger.validationToken;
 
 /*crypto.randomBytes(8, (err, buff) => {
   if (err) throw err;
@@ -55,7 +52,7 @@ const fbMessage = (id, text) => {
 const sessions = {};
 
 const findOrCreateSession = (fbid) => {
-  let sessionId;
+  var sessionId;
   Object.keys(sessions).forEach(k => {
     if (sessions[k].fbid === fbid) {
       sessionId = k;
