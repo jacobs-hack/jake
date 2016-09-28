@@ -17,6 +17,6 @@ module.exports =
     // wit keys
     wit:
     {
-        "serverAccessToken": "Q3WJD7IUBGLV2V7XA5IWAAWZBMUZCIXM"
+        "serverAccessToken": "RLLN3PGNQRZ5SRYJZZZZVZ556BMV42GH"
     }
 }
