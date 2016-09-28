@@ -13,7 +13,7 @@ const log = require('node-wit').log;
 const PORT = config.bot.port || 5000;
 
 // Wit.ai parameters
-const WIT_TOKEN = process.env.WIT_TOKEN;
+const WIT_TOKEN = config.wit.serverAccessToken;
 
 // Messenger API parameters
 const FB_PAGE_TOKEN = config.messenger.pageAccessToken;
