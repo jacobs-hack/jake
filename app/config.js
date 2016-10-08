@@ -9,10 +9,10 @@ module.exports =
     // messenger keys
     messenger:
     {
-        "appSecret": "your-app-secret",
-        "validationToken": "your-validation-token",
-        "pageAccessToken": "your-page-access-token",
-        "pageId" :"your-page-id"
+        "appSecret": "your-app-key",
+        "validationToken": "your_validation_token",
+        "pageAccessToken": "your-page-token",
+        "pageId" :"your-facebook-page-id"
     },
     // slack keys
     slack: {
@@ -21,7 +21,6 @@ module.exports =
     // wit keys
     wit:
     {
-        // "appId": "your-wit-id",
-        "serverAccessToken": "your-wit-token"
+        "serverAccessToken": "witai-server-access-token"
     }
 }
