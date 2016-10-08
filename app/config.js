@@ -14,6 +14,10 @@ module.exports =
         "pageAccessToken": "your-page-access-token",
         "pageId" :"your-page-id"
     },
+    // slack keys
+    slack: {
+      
+    },
     // wit keys
     wit:
     {

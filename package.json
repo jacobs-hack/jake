@@ -23,11 +23,16 @@
   "homepage": "https://github.com/jacobs-hack/jaybot#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "botkit": "^0.2.2",
+    "botkit-middleware-witai": "0.0.2",
     "config": "^1.21.0",
     "crypto": "0.0.3",
     "express": "^4.14.0",
     "node-fetch": "^1.6.0",
     "node-wit": "^4.1.0",
     "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "winston": "^2.2.0"
   }
 }
