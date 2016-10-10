@@ -148,8 +148,7 @@ router.post('/webhook', function (req, res) {
               console.log('Waiting for next user messages');
 
               // log context to the logfile
-              logger.info(context);
-
+              
               // Based on the session state, you might want to reset the session.
               // This depends heavily on the business logic of your bot.
               // Example:
