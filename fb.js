@@ -107,7 +107,7 @@ router.get('/webhook', (req, res) => {
 
 router.post('/webhook', function (req, res) {
   const data = req.body;
-
+  console.log(data);
   if (data.object === 'page') {
     data.entry.forEach(entry => {
       entry.messaging.forEach(event => {
@@ -148,7 +148,7 @@ router.post('/webhook', function (req, res) {
               console.log('Waiting for next user messages');
 
               // log context to the logfile
-              
+
               // Based on the session state, you might want to reset the session.
               // This depends heavily on the business logic of your bot.
               // Example:
