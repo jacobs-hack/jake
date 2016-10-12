@@ -90,7 +90,7 @@ controller.hears('.*', ['direct_message', 'direct_mention'], function(bot, messa
   wit.hears("hardware", 0.5, function(bot, message, outcome){
     var response = {
       text: "MLH is located in the South Cloister\n \
-Here is a list of the hardware MLH brought:\n \
+      Here is a list of the hardware MLH brought:\n \
       Oculus Rift\n \
       Thalmic Myo\n \
       Leap Motion\n \
@@ -162,10 +162,10 @@ Here is a list of the hardware MLH brought:\n \
   wit.hears("organizers", 0.5, function(bot, message, outcome){
     var response = {
       text: "Here is a list of the main organizers:\n \
-KP\n \
-Josh\n \
-Zahra\n \
-Fares"
+      KP\n \
+      Josh\n \
+      Zahra\n \
+      Fares"
     }
     bot.reply(message, response);
   })
@@ -194,5 +194,4 @@ Fares"
     }
     bot.reply(message, response);
   })
-})
 });
