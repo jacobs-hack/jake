@@ -14,7 +14,7 @@ var controller = Botkit.slackbot({
 
 var bot = controller.spawn({
   token: SLACK_TOKEN
-})startRTM();
+}).startRTM();
 
 controller.hears('.*', ['direct_message', 'direct_mention'], function(bot, message){
   var wit = witbot.process(message.text, bot, message);
