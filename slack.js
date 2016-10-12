@@ -1,6 +1,7 @@
 const express = require('express');
 const config = require('./app/config.js');
 const Wit = require('node-wit').Wit;
+const Botkit = require('botkit');
 
 const WIT_TOKEN = config.wit.serverAccessToken;
 
